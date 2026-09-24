@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, Activity, Target, Users, ArrowRight, CheckCircle, Factory, Database, Award } from 'lucide-react';
+import { ShieldCheck, Activity, Target, ArrowRight, CheckCircle, Factory, Database, Award } from 'lucide-react';
 import { API_BASE } from '../config';
 
 const fadeIn = {
@@ -167,28 +167,6 @@ export default function LandingPage() {
                         {["End-to-End Encryption", "Role-Based Access", "Automatic Verification", "SSO Integration"].map((item, i) => (
                             <div key={i} className="flex items-center gap-2 bg-white/10 px-5 py-2.5 rounded-full text-white text-sm font-bold backdrop-blur-sm border border-white/20">
                                 <CheckCircle className="w-4 h-4" /> {item}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Enterprise Team Section */}
-            <section className="py-32 px-6">
-                <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-4xl font-bold text-white mb-20 tracking-tight">Engineering Leadership</h2>
-                    <div className="grid md:grid-cols-3 gap-16">
-                        {[
-                            { name: "A Veda Varshini", role: "Chief Systems Architect" },
-                            { name: "B Agasthya Anirudh", role: "Lead Machine Learning Engineer" },
-                            { name: "E Lavan Kumar", role: "Head of Infrastructure" }
-                        ].map((dev, i) => (
-                            <div key={i} className="group">
-                                <div className="w-24 h-24 bg-slate-800 rounded-full mx-auto mb-6 border-4 border-slate-900 shadow-xl group-hover:border-blue-500 transition-all flex items-center justify-center">
-                                    <Users className="w-8 h-8 text-slate-600" />
-                                </div>
-                                <h4 className="text-xl font-bold text-white mb-1">{dev.name}</h4>
-                                <p className="text-blue-500 text-xs font-black uppercase tracking-widest">{dev.role}</p>
                             </div>
                         ))}
                     </div>
